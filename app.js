@@ -4,12 +4,35 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
+var http = require('http');
 var app = express();
 
+// 모듈을 사용합니다.
+var mongoose = require('mongoose');
+mongoose.connect("mongodb://alziogbb:alziogbbpw@ds139655.mlab.com:39655/alziodb");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 모듈 작업 종료
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -19,7 +42,7 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+//app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);

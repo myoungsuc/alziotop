@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  form(action='/formaction' method='post')
+   p
+    input(type='text' name='ntitle')
+   p
+    input(type='text' name='ntitle2')
+   p
+    input(type='text' name='ntitle3')
+   p
+    textarea(name='ntext')
+   p
+    input(type='submit' value='전송')

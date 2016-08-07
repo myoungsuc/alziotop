@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  include top
+  h1= title
+  p Welcome to #{title}
+  p 알지오 입니다. #{alz}
+  p(class=['uii uik']) 알지오 입니다. #{alz}
+  a(style={color:'#fff', background:'#000'})(href='www.alzio.co.kr') ALZIO
+  a(class=['uii uik fsizz'])(href='www.alzio.co.kr') ALZIO
+  a.uiired(href='www.alzio.co.kr') ALZIO
+  <BR><BR>
+  .uiired #{title}
+  <BR><BR>
+  a#ki(href='www.alzio.co.kr') ALZIO
+  <BR><BR>
+  #ki #{title}
+  <BR><BR>
+  section#ab
+   input#ef(type="text" placeholder="IT전문교육 - ALZIO")
+   input#efg(type="button" value="Send") 
+
+
+  <BR><BR>
+  p!= 'ALZIO' + ' <b><u>2003!!</b></u> IT전문교육'
+  // 이내용은 주석입니다
+  //- 이내용은 주석입니다
+  p ALZIO
+  p ALZIO2
+  p ALZIO2
+  <BR><BR>
+  <BR><BR>
+
+  input(
+  type='checkbox'
+  name='CH'
+  checked)
+  input(type='checkbox', checked)
+  include foot

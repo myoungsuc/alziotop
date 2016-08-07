@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title><%= title %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+
   </head>
   <body>
+    <% include ./top %>
+
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <p><%= alz %></p>
+    <img src="images/alzo_main_logo.png">
+
+<div class="">
+     <div class="badge">
+         <h2><span class="glyphicon glyphicon-fire"></span>
+                <span><%= title %></span></h2>
+          <p>IT전문교육</p>
+     </div>
+</div>
+
+
+
+
+
+
+    <% include ./foot%>
+
   </body>
 </html>
